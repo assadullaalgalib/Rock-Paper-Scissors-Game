@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 30px;
+}
+
+
+h1 {
+    margin-bottom: 30px;
+    color: #222;
+}
+
+
+#game {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:hover img {
+    transform: scale(1.1);
+}
+
+#Score-board {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#player-score,
+#computer-score {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+#result-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    #game {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #Score-board {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
